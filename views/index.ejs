@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      html {
+        background: linear-gradient(red, green);
+        background-repeat: no-repeat;
+      }
+      body {
+        height: 773px;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        -webkit-text-stroke: 2px black;
+      }
+      h2 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      form {
+        text-align: center;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome to BP-Planner</h1>
+    <form action="/login" method="get">
+      <h2>Login</h2>
+      <input type="text" name="username" placeholder="firstName" />
+      <button>Submit</button>
+    </form>
+    <form action="/signup" method="get">
+      <h2>Signup</h2>
+      <input type="text" name="username" placeholder="firstName" />
+      <button>Create</button>
+    </form>
+  </body>
+</html>
