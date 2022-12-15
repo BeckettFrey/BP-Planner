@@ -29,15 +29,20 @@
   </head>
   <body>
     <h1>Welcome to BP-Planner</h1>
-    <form action="/login" method="get">
+    <form action="/login" method="POST">
       <h2>Login</h2>
-      <input type="text" name="username" placeholder="firstName" />
-      <button>Submit</button>
+
+      <label>
+        <input type="text" name="username" placeholder="firstName" />
+        <button>Submit</button>
+      </label>
     </form>
-    <form action="/signup" method="get">
+    <form action="/signup" method="POST">
       <h2>Signup</h2>
-      <input type="text" name="username" placeholder="firstName" />
-      <button>Create</button>
+      <label>
+        <input type="text" name="username" placeholder="firstName" />
+        <button>Create</button>
+      </label>
     </form>
   </body>
 </html>
