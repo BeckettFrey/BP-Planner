@@ -7,7 +7,6 @@ const { stringify } = require("querystring");
 router.use(bodyParser.urlencoded({ extended: false }));
 
 let usersArray = fs.readFile("users.json", "utf8", (err, data) => {
-  console.log("inside");
   if (err) throw err;
   usersArray = JSON.parse(data);
 });

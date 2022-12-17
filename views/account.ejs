@@ -6,25 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
     <h1><%= cred.username %>'s BP List</h1>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+    <ul id="LIST">
+      <li id="A"><%=posts.p1%></li>
+      <li id="B"><%= posts.p2 %></li>
+      <li id="C"><%=posts.p3%></li>
+      <li id="D"><%= posts.p4%></li>
+      <li id="E"><%= posts.p5%></li>
+      <li id="F"><%= posts.p6%></li>
+      <li id="G"><%= posts.p7%></li>
+      <li id="H"><%=posts.p8 %></li>
+      <li id="I"><%= posts.p9%></li>
+      <li id="J"><%= posts.p10%></li>
     </ul>
-    <form action="/login/access/<%= cred.id %>" method="POST">
+    <form
+      action="/login/access/<%= cred.id %>/<%= cred.username %> "
+      method="POST"
+    >
       <label>
         <input type="text" name="item" placeholder="What now?" required />
         <button>Add</button>
       </label>
     </form>
+    <form
+      action="/login/access/<%= cred.id %>/<%= cred.username %>/delete "
+      method="POST"
+    >
+      <label>
+        <input type="number" name="itemNum" placeholder="0-9" required />
+        <button>Delete</button>
+      </label>
+    </form>
   </body>
+  <script>
+    //document.getElementById("A").hidden = "true";
+    if (document.getElementById("A").innerText == "aeiou") {
+      document.getElementById("A").hidden = "true";
+    }
+    if (document.getElementById("B").innerText == "aeiou") {
+      document.getElementById("B").hidden = "true";
+    }
+    if (document.getElementById("C").innerText == "aeiou") {
+      document.getElementById("C").hidden = "true";
+    }
+    if (document.getElementById("D").innerText == "aeiou") {
+      document.getElementById("D").hidden = "true";
+    }
+    if (document.getElementById("E").innerText == "aeiou") {
+      document.getElementById("E").hidden = "true";
+    }
+    if (document.getElementById("F").innerText == "aeiou") {
+      document.getElementById("F").hidden = "true";
+    }
+    if (document.getElementById("G").innerText == "aeiou") {
+      document.getElementById("G").hidden = "true";
+    }
+    if (document.getElementById("H").innerText == "aeiou") {
+      document.getElementById("H").hidden = "true";
+    }
+    if (document.getElementById("I").innerText == "aeiou") {
+      document.getElementById("I").hidden = "true";
+    }
+    if (document.getElementById("J").innerText == "aeiou") {
+      document.getElementById("J").hidden = "true";
+    }
+  </script>
 </html>
